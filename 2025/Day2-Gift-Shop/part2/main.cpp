@@ -131,4 +131,3 @@ int main() {
   std::cout << sum << "\n";
   return 0;
 }
-

@@ -18,7 +18,9 @@ def count_zero_hits(starting_position: int, direction: str, distance: int) -> in
 def apply_rotation(starting_position: int, rotation: str) -> tuple[int, int]:
     direction, distance = rotation[0], int(rotation[1:])
 
-    number_of_times_zero_ticked: int = count_zero_hits(starting_position, direction, distance)
+    number_of_times_zero_ticked: int = count_zero_hits(
+        starting_position, direction, distance
+    )
 
     if direction == "R":
         new_position: int = (starting_position + distance) % 100
@@ -39,7 +41,9 @@ def main() -> int:
             if not rotation:
                 continue
 
-            curr_start, number_of_times_zero_ticked = apply_rotation(curr_start, rotation)
+            curr_start, number_of_times_zero_ticked = apply_rotation(
+                curr_start, rotation
+            )
             res += number_of_times_zero_ticked
 
     return res
