@@ -64,8 +64,8 @@ parse_grid_and_find_s(std::string file_name) {
 
 int find_splittings_sum(std::vector<std::vector<int>> &grid,
                         std::pair<int, int> s) {
-  const int H = (int)grid.size();
-  const int W = H ? (int)grid[0].size() : 0;
+  const int H = grid.size();
+  const int W = H ? grid[0].size() : 0;
 
   auto in_bounds = [&](int r, int c) -> bool {
     return 0 <= r && r < H && 0 <= c && c < W;
