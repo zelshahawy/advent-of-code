@@ -1,0 +1,13 @@
+[workspace]
+authors = ["Ziad Elshahawy <ziadelshahawygit@gmail.com>"]
+channels = ["conda-forge"]
+name = "part2"
+platforms = ["osx-arm64"]
+version = "0.1.0"
+
+[tasks]
+
+[dependencies]
+boost = ">=1.85.0,<2"
+clangxx = ">=21.1.7,<22"
+make = ">=4.4.1,<5"
